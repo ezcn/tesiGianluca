@@ -1,0 +1,73 @@
+% Chapter discussion
+
+\chapter{Discussion} % Main chapter title
+
+\label{Chapter4} % For referencing the chapter elsewhere, use \ref{Chapter4} 
+
+%----------------------------------------------------------------------------------------
+
+% Define some commands to keep the formatting separated from the content 
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\tabhead}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{\bfseries#1}}
+\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%~~~~~~~~ RE ANSWER
+
+The genetic causes of pregnancy loss are not yet entirely understood. Current efforts target variants of large size or in coding regions, leaving unexplored a large fraction of the genome. Whit this work I demonstrated that it is possible to identify variants likely to cause idiopathic pregnancy losses using high-coverage whole-genome sequence data.\\ 
+
+I analyzed genomic sequences of forty-four embryos from mothers that experienced pregnancy loss. From the analysis of available anthropometric and medical information we do not see any significant difference with a reference set of mothers that did voluntary termination of pregnancy, except for the significantly higher age of mothers presenting recurrent pregnancy loss. 
+
+When screened with available diagnostic tools, about 70\% of the analyzed embryos present chromosome aneuploidies, as expected in the general population \cite{goddijn2000genetic,zhang2009genetic}. In this work I focused on the remaining 30\% apparently euploid for which whole-genome sequencing was performed. Knowing that roughly 30\% of the sample is sequentiable allows to calculate the overall number of samples to collect, given the number of samples to sequence to scale the project.   
+
+I analyzed genome sequences to discover roughly 4.7M genomic variants per individual, as expected for a Human genome \cite{1000genome2015global}. Using a filtering procedure  based on genomic annotations and on the hypothesis that miscarriage is a complex polygenic trait, I identified several variants that are likely to be deleterious and therefore putatively causative. For each sample, the filter starts from millions of variants to obtain less than fifty variants per sample located in 112 genes. I further report on three genes either because they are shared among samples (\textit{FMNL2}, and \textit{GXYLT1}) or because they are lethal (\textit{LAMA5}). \textit{FMNL2}, and \textit{LAMA5} are involved in attachment, migration and organization of cells into tissue during embryonic development. \textit{GXYLT1}, is involved on the O-glycosilation.\\
+
+We did not expect major overlaps among samples, as we expected that each case is due to a different set of mutations. Nevertheless, it was encouraging to find overlaps already with this small data set. Furthermore, while this study find candidates for causative mutations, it also suggests possible improvements. The filter that I used  seems to be quite stringent as it identifies a very limited number of variants, therefore it can be relaxed or based on a more effective combination of parameters. Also, it would be useful to develop a strategy to evaluate false positives and negatives. Finally, in the cases with multiple deleterious variants in heterozygosis it would be informative to reconstruct the phase of the variants to understand if both  if both copies of the genes are compromised.\\ 
+
+
+Compared to what already available in literature \cite{laisk2019genetic,qiao2016whole,fu2018whole}, this project uses a novel approach for the study of the genetic causes of miscarriages, i.e. it looks at whole-genome. While here I present results for the coding part of genome, the GREP group is working to include regulatory and intergenic regions, therefore providing a complete scan of the genome. These first results will be corroborated with a more comprehensive analysis that fully implements a predictive model and includes regulatory regions.\\
+
+
+Overall, I demonstrated that whole-genome sequencing can help to clarify part of the causes of pregnancy loss and provides essential indications for the realization of a larger study.
+
+
+
+%For answer at this questions we have done a preliminary study on the medical data on the mothers. This kind of analysis is essential for future sampling for miscarriages, helping us to rule out some medical data such as BMI (Figure \ref{fig:panel_BMI_MenAge}.B) and suggest taking note of the length of the fetus when spontaneous abortion is diagnosed because the weeks are not informative and it is possible that the abortion occurred earlier \todo{we demonstrate that our data set complies to the standard}. After this explorative analysis from 119 samples only 29\% can be sequenced, this data is important for estimate the number of samples that we have to collect for having about one thousand sequences (Figure \ref{fig:pipelineOutcome}). With pre-sequencing screening for aneuploidies we have that trisomy of chromosome 22 is the most shared in our samples because an embryo with other trisomies can't arrive at the stage of 8-12 weeks but is development is arrested in an early stage (Figure \ref{fig:preseqOutcome}).\\
+
+%After the sequencing the bioinformatics analysis and data obtained by \textsc{VEP} reveals no macroscopic differences between genomics sequence, the cause may be searched in SNPs or CNVs. Therefore we are interested in developing this software to discover these still unknown causes.\\
+
+
+
+
+%The novelties of this study was the analysis of embyo's DNA for a whole-genome analysis. The focus was moved to SNPs, and CNVs in all DNA regions and not only in the exome as done to date.
+
+% parlare dell'approccio innovativo di uno script che metta insieme più cose riguardanti i miscarriages (liste di geni associati, score CADD e pLI) e restituisca dei geni candidati che possono essere usati per fare esperimenti in vivo
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%After the analysis with VEP, we have filtered from 4.5 Million variants, for each sample, to 1 Million of variants that have consequences on phenotype.
+
+
+%This thesis has been a pilot for the project in my lab.
+%Each point that has been analyzed in the results is needed for us to outline the future step for this project.\\
+
+%Analysis of medical data is essential for future sampling for miscarriages.
+%Helping us to rule out some medical data such as BMI (Figure \ref{fig:bmi}) and suggest taking note of the length of the fetus when spontaneous abortion is diagnosed because the weeks are not informative and it is possible that the abortion occurred earlier.\\
+
+%From 119 samples only about 20\% go to sequencing, and this is important to understand the number of samples for having about 1000 sequences and do population analysis (Figure \ref{fig:pipeline_screening}).\\
+
+%Referring to aneuploidies, trisomy of chromosome 22 is the most shared in our samples because an embryo with other trisomies can't arrive at the stage of 8-12 weeks but is development is arrested in an early stage (Figure \ref{fig:aneuploidies_CHG}).\\
+
+%The data extracts from VEP software are complex and huge, the example in Figure \ref{fig:vep_example_output} is for each site of each chromosome that differs from the reference at least in one allele.
+%The amount of data is so large that it forces us to work on a  server for handling.\\
+
+%The summary results after VEP are interesting for us to understand if there is a macroscopic difference with normal data and at this point, we can assume that there isn't this kind of difference but the cause may be searched in SNPs or CNVs. 
+%Therefore we are interested in developing this software to discover these still unknown causes.\\
+
+%The software is still in development and in a short time, we will complete the first version that makes an additive score for prioritize each site and give us a complex score built around parameters that we choose to use.\\
+
+%The results of actual version of software are encouraging because we denote an overlapping in 3 samples of 6 and is in a gene that is correlated with miscarriage and cancer.
+%\emph{AHNAK2} is a cytoplasmatic nucleoprotein of which little is known. It is probably not our "Golden Boy" but is a nice example that what we make is on the right way.

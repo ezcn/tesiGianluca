@@ -1,0 +1,137 @@
+\documentclass[
+11pt, % The default document font size, options: 10pt, 11pt, 12pt
+oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, % ngerman for German
+singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+%parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{MastersDoctoralThesis} % The class file specifying the document structure
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{todonotes}
+\usepackage{mathpazo} % Use the Palatino font by default
+\usepackage{adjustbox} % Resize table
+\usepackage[backend=bibtex,style=numeric-comp,sorting=none,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\addbibresource{thesis.bib} % The filename of the bibliography
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\usepackage{glossaries}
+\usepackage[T1]{fontenc}
+\usepackage{comment}
+\usepackage{hyperref}
+\makeglossaries
+\loadglsentries{glossary}
+
+
+
+\author{Gianluca Damaggio }
+\date{24 May 2020}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+{\scshape\large\normalfont\bfseries Università degli Studi di Napoli Federico II \par}
+ \vspace{0.7cm} 
+ \includegraphics[width=0.25\textwidth]{fig/logo.png}
+ \par
+ \vspace{0.5cm}
+\hspace{2cm}
+{\scshape\large\normalfont Scuola Politecnica e delle Scienze di Base
+\newline
+Area Didattica di Scienze Matematiche Fisiche e Naturali
+ \par}
+ \vspace{0.5cm}
+{\scshape\large\normalfont Corso di Laurea Magistrale in Biologia curriculum biomolecolare
+ \par}
+ \vspace{0.5cm} 
+{\scshape\large\normalfont Tesi sperimentale in Genetica
+ \par}
+  \vspace{0.8cm}
+{\scshape\large\normalfont\bfseries\textit Using whole-genome sequencing of spontaneous abortion to identify variants likely to cause idiopathic pregnancy losses.
+ \par}
+  \vspace{0.8cm}
+{\scshape\large\normalfont\bfseries  Identificazione di varianti genetiche responsabili di abortività spontanea idiopatica attraverso lo studio di sequenze genomiche embrionali.
+ \par} 
+\vspace{2cm} 
+\begin{minipage}{0.45\textwidth}
+{\scshape\normalfont\large\bfseries Relatore:}\\
+{\scshape\normalfont\large Dott.ssa Giuliana Napolitano} \\ 
+{\scshape\normalfont\large\bfseries Correlatore:} \\
+{\scshape\normalfont\large Dott.ssa Vincenza Colonna}\\
+\end{minipage}
+\hspace{2.5cm}
+\begin{minipage}{0.25\textwidth}
+{\scshape\normalfont\large\bfseries Candidato:}\\
+ {\scshape\normalfont\large Gianluca Damaggio \\
+ Matricola N92002022} 
+\end{minipage}
+
+\vfill
+\centering
+\vspace{0.48cm} 
+{\scshape\Large\normalfont A.A. 2018/2019}
+
+\end{titlepage}
+%\maketitle
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+%\listoffigures % Prints the list of figures
+
+%\listoftables % Prints the list of tables
+
+
+%--------------------------------------------------------------------------------------
+
+\include{Chapters/abstract}
+
+\include{Chapters/introduction}
+
+\include{Chapters/aimOfStudy}
+
+\include{Chapters/results}
+
+\include{Chapters/discussion}
+
+\include{Chapters/methods}
+
+%\printglossary
+
+\printbibliography[heading=bibintoc]
+
+\chapter{Conference Abstracts}
+\begin{enumerate}
+    \item Buonaiuto S. , Di Biase I. , Aleotti V. , \textbf{Damaggio G.} , D'Ambrosio P. , Catapano O. , Ravaei A. , Esposito G. , Chierici M. , Pulijala M. , Ayub Q. , Furlanello C. , Garrison E. , Soranzo N. , Capalbo A. , Rubini M. , Di Biase S. , Colonna V. . \textit{Deciphering genetic causes of idiopathic pregnancy loss from an embryonic perspective}. Biology of Genomes, Cold Spring Harbor Laboratory, US,2020\\
+
+    \item Buonaiuto S. , Di Biase I. , Aleotti V. , \textbf{Damaggio G.} , D'Ambrosio P. , Catapano O. , Esposito G. , Chierici M. , Pulijala M. , Ayub Q. , Furlanello C. , Garrison E. , Soranzo N. , Capalbo A. , Rubini M. , Di Biase S. , Colonna V. . \textit{Identification of genomic variants responsible for pregnancy loss: a pilot study}. Network Tools and Applications in Biology /Bioinformatics and Computational Biology Conference, University of Fisciano, Italy - 2019\\
+
+    \item Buonaiuto S. , Di Biase I. , Aleotti V. , Ravaei A. , \textbf{Damaggio G.} , D’Ambrosio P. , Catapano O. , Esposito G. , Chierici M. , Pulijala M. , Ayub Q. , Furlanello C. , Garrison E. , Soranzo N. , Capalbo A. , Rubini M. , Di Biase S. , and Colonna V. . \textit{Identification of genomic variants responsible for pregnancy loss: a pilot study}. European Society of Human Reproduction and Embryology 2020, Copenhagen, Denmark\\
+
+    \item Kahraman S. , Sagir F. , Yuksel B. , Cetinkaya M. , Gavaz M. , Kara B. , Yesil M. , Akar G. , Buonaiuto S. , \textbf{Damaggio G. }, Fabiani M. , De Marino A. , Colonna V. , Simon C. , Capalbo A. . \textit {Genomics analysis of maternal exomes reveals new candidate genes and pathways for the diagnosis and prediction of recurrent preimplantation embryo arrest in IVF cycles}. European Society of Human Reproduction and Embryology 2020, Copenhagen, Denmark\\
+
+    \item Buonaiuto S. , Di Biase I. , Aleotti V. , \textbf{Damaggio G.} , D'Ambrosio P. , Catapano O. , Esposito G. , Chierici M. , Pulijala M. , Ayub Q. , Furlanello C. , Garrison E. , Soranzo N. , Rubini M. , Di Biase S. , Colonna V. .  \textit{Genomics of Pregnancy Loss}. Associazione Genetica Italiana 2019, Cortona, Italy\\
+\end{enumerate}
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname}
+\end{acknowledgements}
+
+\end{document}
+
+
